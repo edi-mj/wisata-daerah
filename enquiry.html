@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <title>Pertanyaan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <img src="images/logo_seoul.png" alt="Logo Seoul" />
+      <p>SEOUL</p>
+    </div>
+    <div id="menu">
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="enquiry.html">Berikan pertanyaan</a></li>
+      </ul>
+    </div>
+    <div class="grid-container">
+      <div class="grid-item sidebar">
+        <img src="images/bendera_korsel.png" alt="Bendera Korea Selatan" />
+        <h3>Korea Selatan</h3>
+        <p>
+          Semenanjung Korea terletak di tengah Asia Timur Laut. Koordinat ibu
+          kotanya, Seoul, adalah 37,34° LU dan 126,59° BT, membuatnya dekat
+          dengan Laut Kuning.
+        </p>
+        <br />
+        <p>Kunjungi website resmi Seoul:</p>
+        <a href="https://english.seoul.go.kr" target="_blank">
+          <b>Website Resmi</b>
+        </a>
+      </div>
+      <div class="grid-item content">
+        <div class="form-container">
+          <form action="action.html" method="POST">
+            <h3>Kolom Pertanyaan</h3>
+            <label for="nama">Nama lengkap </label>
+            <input type="text" name="nama" id="nama" />
+            <label for="email">Email </label>
+            <input type="email" name="email" id="email" required />
+            <label for="telepon">Telepon </label>
+            <input
+              type="tel"
+              name="telepon"
+              id="telepon"
+              placeholder="xxx-xxxxxxx"
+              required
+            />
+            <label for="alamat">Alamat </label>
+            <textarea
+              name="alamat"
+              id="alamat"
+              cols="30"
+              rows="8"
+              required
+            ></textarea>
+            <label for="kode_pos">Kode Pos </label>
+            <input type="number" name="kodePos" id="kode_pos" required />
+            <label for="tema">Tema Pertanyaan </label>
+            <select id="tema" name="tema">
+              <option value="Seoul">Seoul</option>
+              <option value="Korea Selatan">Korea Selatan</option>
+              <option value="Sejarah">Sejarah</option>
+              <option value="Simbol/Logo">Simbol</option>
+              <option value="Lokasi">Lokasi</option>
+              <option value="Populasi">Populasi</option>
+              <option value="Destinasi Wisata">Destinasi Wisata</option>
+              <option value="Desa Museum Donuimun">Desa Museum Donuimun</option>
+              <option value="Pulau Nodeul">Pulau Nodeul</option>
+              <option value="Pildong">Pildong</option>
+              <option value="Istana Gyeongbokgung">Istana Gyeongbokgung</option>
+              <option value="Istana Changdeokgung">Istana Changdeokgung</option>
+              <option value="Fasilitas Umum dan Kebudayaan">
+                Fasilitas Umum dan Kebudayaan
+              </option>
+              <option value="Seoul Arts Center">Seoul Arts Center</option>
+              <option value="Sejong Center for the Performing Arts">
+                Sejong Center for the Performing Arts
+              </option>
+              <option value="Seoul Public Bike">Seoul Public Bike</option>
+            </select>
+            <label for="pertanyaan">Pertanyaan: </label>
+            <textarea
+              name="pertanyaan"
+              id="pertanyaan"
+              cols="30"
+              rows="8"
+              required
+            ></textarea>
+            Preferensi balasan :
+            <input type="radio" name="preferensi" id="via_email" checked />
+            <label for="via_email">Email</label>
+
+            <input type="radio" name="preferensi" id="via_sms" />
+            <label for="via_sms">SMS</label>
+
+            <input type="radio" name="preferensi" id="keduanya" />
+            <label for="keduanya">Keduanya</label>
+            <input type="submit" value="KIRIM" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <p>Muhammad Junaidi (230411100171)</p>
+      <p>Dasar Pemrograman Web IF 2A</p>
+    </div>
+  </body>
+</html>
